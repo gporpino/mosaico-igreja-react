@@ -1,14 +1,15 @@
 import React from "react";
+import Iconbox from "../../components/iconbox";
 
 import "../../scss/global.scss";
 import "./Home.scss";
-// import logo from "../../logo.svg";
+import logo from "../../logo.png";
 
 const Home = () => (
   <div className="Home">
     <nav className="nav">
       <div className="container">
-        {/* <img src={logo} alt="Mosaico Igreja" className="logo" /> */}
+        <img src={logo} alt="Mosaico Igreja" className="logo" />
       </div>
     </nav>
     <header className="slider">
@@ -54,9 +55,32 @@ const Home = () => (
     <section id="conheca">
       <div className="container">
         <div className="row">
-          <div className="col-md-4" />
-          <div className="col-md-4" />
-          <div className="col-md-4" />
+          div className="col-md-4">
+          <Iconbox
+            link="/issoae"
+            type="conhecaigreja"
+            icon="https://via.placeholder.com/48x48"
+            title="Quero conhecer a igreja"
+            desc="Tudo o que você precisa saber sobre nós (e mais um pouco)"
+          />
+        </div>
+        <div className="col-md-4">
+          <Iconbox
+            link="/issoae"
+            type="conhecajesus"
+            icon="https://via.placeholder.com/48x48"
+            title="Quero conhecer Jesus"
+            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, sunt?"
+          />
+        </div>
+        <div className="col-md-4">
+          <Iconbox
+            link="/issoae"
+            type="facaparte"
+            icon="https://via.placeholder.com/48x48"
+            title="Quero fazer parte"
+            desc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, sunt?"
+          />
         </div>
       </div>
     </section>
