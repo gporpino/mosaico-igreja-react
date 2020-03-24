@@ -1,0 +1,12 @@
+@import 'grid';
+@import 'mixins';
+@import 'branding';
+
+body {
+  background-color: #f4f6f8;
+}
+
+p {
+  font-size: $body2;
+  line-height: $lineBase;
+}
