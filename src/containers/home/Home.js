@@ -2,7 +2,7 @@ import React from "react";
 
 import "../../scss/global.scss";
 import "./Home.scss";
-// import logo from '../../logo.svg';
+// import logo from "../../logo.svg";
 
 const Home = () => (
   <div className="Home">
